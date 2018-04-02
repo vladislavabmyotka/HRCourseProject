@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html,body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Roboto", sans-serif
+}
+
+.page-container {
+    max-width: 1400px;
+}
+
+.java {
+    width: 80%;
+}
+
+.web {
+    width: 60%;
+}
+
+.sql {
+    width: 75%;
+}
+
+.c {
+    width: 50%;
+}
+
+.name {
+    margin-left: 58px;
+}
+
+.russian {
+    height: 24px;
+    width: 100%;
+}
+
+.english {
+    height: 24px;
+    width: 60%;
+}
+
+.belarusian {
+    height: 24px;
+    width: 50%;
+}
+.link {
+    text-decoration: none;
+    color: #eeeeee
+}
