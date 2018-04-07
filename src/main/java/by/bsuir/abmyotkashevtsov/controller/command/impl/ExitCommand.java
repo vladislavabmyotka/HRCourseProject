@@ -1,7 +1,7 @@
-package com.epam.abmyotka.hr.command.impl;
+package by.bsuir.abmyotkashevtsov.controller.command.impl;
 
-import com.epam.abmyotka.hr.command.Command;
-import com.epam.abmyotka.hr.controller.Router;
+import by.bsuir.abmyotkashevtsov.controller.command.Command;
+import by.bsuir.abmyotkashevtsov.controller.Router;
 
 import javax.servlet.http.HttpServletRequest;
 
