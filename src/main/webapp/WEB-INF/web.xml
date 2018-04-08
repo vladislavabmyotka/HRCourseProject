@@ -6,6 +6,15 @@
 
     <display-name>HR Web Application</display-name>
 
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </filter-mapping>
+
     <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/index.jsp</jsp-file>
@@ -14,6 +23,49 @@
         <servlet-name>Index</servlet-name>
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <jsp-file>/WEB-INF/jsp/register.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Error</servlet-name>
+        <jsp-file>/WEB-INF/jsp/error.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Error</servlet-name>
+        <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/WEB-INF/jsp/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/WEB-INF/jsp/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/jsp/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>414</error-code>
+        <location>/WEB-INF/jsp/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/jsp/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>504</error-code>
+        <location>/WEB-INF/jsp/error.jsp</location>
+    </error-page>
     
     <welcome-file-list>
         <welcome-file>home</welcome-file>
