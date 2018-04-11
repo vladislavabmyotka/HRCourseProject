@@ -34,6 +34,33 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>Edit Account</servlet-name>
+        <jsp-file>/WEB-INF/jsp/editAccount.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Edit Account</servlet-name>
+        <url-pattern>/editAccount</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Delete Account</servlet-name>
+        <jsp-file>/WEB-INF/jsp/deleteAccount.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Delete Account</servlet-name>
+        <url-pattern>/deleteAccount</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Forgot Password</servlet-name>
+        <jsp-file>/WEB-INF/jsp/forgotPassword.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Forgot Password</servlet-name>
+        <url-pattern>/forgotPassword</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Error</servlet-name>
         <jsp-file>/WEB-INF/jsp/error.jsp</jsp-file>
     </servlet>
@@ -72,4 +99,11 @@
         <welcome-file>index.jsp</welcome-file>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>customtags</taglib-uri>
+            <taglib-location>/WEB-INF/tld/custom.tld</taglib-location>
+        </taglib>
+    </jsp-config>
 </web-app>
