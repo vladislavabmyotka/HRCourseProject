@@ -12,6 +12,10 @@ public class PathConstant {
     public static final String PATH_PAGE_CANDIDATE = "/candidateHome";
     public static final String PATH_PAGE_EMPLOYER = "/employerHome";
     public static final String PATH_PAGE_ADMIN = "/adminHome";
+    public static final String PATH_PAGE_ADMIN_CANDIDATE = "/adminCandidate";
+    public static final String PATH_PAGE_ADMIN_CANDIDATE_EDIT = "/adminCandidateEdit";
+    public static final String PATH_PAGE_ADMIN_EMPLOYER = "/adminEmployer";
+    public static final String PATH_PAGE_ADMIN_EMPLOYER_EDIT = "/adminEmployerEdit";
 
     public static final String PATH_PAGE_FORGOT_PASSWORD = "/forgotPassword";
 }

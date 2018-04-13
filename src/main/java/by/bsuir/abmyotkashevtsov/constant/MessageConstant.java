@@ -10,6 +10,7 @@ public class MessageConstant {
     public static final String INCORRECT_PASSWORD_MESSAGE = "message.incorrect.password";
     public static final String INCORRECT_LOGIN_MESSAGE = "message.incorrect.login";
     public static final String ERROR_ON_WEBSITE = "message.error.on.website";
+    public static final String INCORRECT_DATA = "message.incorrect.data";
 
     public static final String INVALID_RECAPTCHA = "message.invalid.recaptcha";
     public static final String NON_REGISTERED_MESSAGE = "message.non.register";

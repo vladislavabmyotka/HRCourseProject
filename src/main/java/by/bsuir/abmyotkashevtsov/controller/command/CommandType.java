@@ -2,7 +2,10 @@ package by.bsuir.abmyotkashevtsov.controller.command;
 
 import by.bsuir.abmyotkashevtsov.controller.command.impl.*;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.accountImpl.*;
+import by.bsuir.abmyotkashevtsov.controller.command.impl.adminImpl.*;
 import by.bsuir.abmyotkashevtsov.service.AccountService;
+import by.bsuir.abmyotkashevtsov.service.CandidateService;
+import by.bsuir.abmyotkashevtsov.service.EmployerService;
 
 /**
  *  In this enumeration lists the values in uppercase are located in the hidden field of the command type in all jsp.
@@ -11,9 +14,18 @@ public enum CommandType {
     INDEX(new IndexCommand()),
     REGISTER_RELOAD(new RegisterReloadCommand()),
     AUTHORIZATION(new AuthorizationCommand(new AccountService())),
+    FORGOT_PASSWORD(new ForgotPasswordCommand(new AccountService())),
     REGISTER(new RegisterCommand(new AccountService())),
     EDIT_ACCOUNT_DATA(new AccountEditCommand(new AccountService())),
     DELETE_ACCOUNT(new AccountDeleteCommand(new AccountService())),
+    ADMIN_CANDIDATE_VIEW(new AdminCandidateViewCommand(new CandidateService())),
+    ADMIN_CANDIDATE_DELETE(new AdminCandidateDeleteCommand(new CandidateService())),
+    ADMIN_CANDIDATE_EDIT(new AdminCandidateEditCommand(new CandidateService())),
+    ADMIN_CANDIDATE_EDIT_SAVE(new AdminCandidateEditSaveCommand(new CandidateService())),
+    ADMIN_EMPLOYER_VIEW(new AdminEmployerViewCommand(new EmployerService())),
+    ADMIN_EMPLOYER_DELETE(new AdminEmployerDeleteCommand(new EmployerService())),
+    ADMIN_EMPLOYER_EDIT(new AdminEmployerEditCommand(new EmployerService())),
+    ADMIN_EMPLOYER_EDIT_SAVE(new AdminEmployerEditSaveCommand(new EmployerService())),
     ;
     private Command command;
 
