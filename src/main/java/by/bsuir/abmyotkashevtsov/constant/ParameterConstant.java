@@ -10,4 +10,5 @@ public class ParameterConstant {
     public static final String PARAM_OLD_PASSWORD = "oldPassword";
     public static final String PARAM_ATTACHMENT = "attachment";
     public static final String PARAM_RECAPTCHA = "g-recaptcha-response";
+    public static final String PARAM_EMAIL = "email";
 }

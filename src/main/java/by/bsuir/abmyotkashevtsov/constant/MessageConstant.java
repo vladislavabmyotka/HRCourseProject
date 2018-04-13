@@ -8,10 +8,17 @@ public class MessageConstant {
     public static final String INCORRECT_LOGIN_PASSWORD_MESSAGE = "message.incorrect.login.password";
     public static final String USED_LOGIN_MESSAGE = "message.used.login";
     public static final String INCORRECT_PASSWORD_MESSAGE = "message.incorrect.password";
+    public static final String INCORRECT_LOGIN_MESSAGE = "message.incorrect.login";
     public static final String ERROR_ON_WEBSITE = "message.error.on.website";
 
     public static final String INVALID_RECAPTCHA = "message.invalid.recaptcha";
-
+    public static final String NON_REGISTERED_MESSAGE = "message.non.register";
+    public static final String FORGOT_PASSWORD_THEME_MESSAGE = "message.forgot.password.theme";
+    public static final String FORGOT_PASSWORD_MESSAGE_PART1 = "message.forgot.password.message.part1";
+    public static final String FORGOT_PASSWORD_MESSAGE_PART2 = "message.forgot.password.message.part2";
+    public static final String FORGOT_PASSWORD_MESSAGE_PART3 = "message.forgot.password.message.part3";
+    public static final String FORGOT_PASSWORD_MESSAGE_PART4 = "message.forgot.password.message.part4";
+    public static final String SUCCESSFULLY_FORGOT_PASSWORD_MESSAGE = "message.forgot.password.successfully";
     public static final String TAG_HELLO = "hello";
     public static final String TAG_HOME_MAIN_TITLE = "home.main.title";
     public static final String TAG_ADMIN_CANDIDATE = "admin.candidate";
