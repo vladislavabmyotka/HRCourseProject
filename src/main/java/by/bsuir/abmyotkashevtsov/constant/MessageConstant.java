@@ -40,4 +40,7 @@ public class MessageConstant {
     public static final String TAG_EMPLOYER_HOME_TITLE_2_MAIN = "employer.home.title2.main";
     public static final String TAG_EMPLOYER_HOME_TITLE_3 = "employer.home.title3";
     public static final String TAG_EMPLOYER_HOME_TITLE_3_MAIN = "employer.home.title3.main";
+    public static final String EMPLOYER_NOT_ASSIGNED = "Не назначен";
+    public static final String VACANCY_HAS_BEEN_REMOVED = "Вакансия была удалена";
+    public static final String CANDIDATE_HAS_BEEN_REMOVED = "Соискатель быд удален";
 }

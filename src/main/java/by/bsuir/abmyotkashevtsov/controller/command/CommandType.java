@@ -3,9 +3,7 @@ package by.bsuir.abmyotkashevtsov.controller.command;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.*;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.accountImpl.*;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.adminImpl.*;
-import by.bsuir.abmyotkashevtsov.service.AccountService;
-import by.bsuir.abmyotkashevtsov.service.CandidateService;
-import by.bsuir.abmyotkashevtsov.service.EmployerService;
+import by.bsuir.abmyotkashevtsov.service.*;
 
 /**
  *  In this enumeration lists the values in uppercase are located in the hidden field of the command type in all jsp.
@@ -26,6 +24,17 @@ public enum CommandType {
     ADMIN_EMPLOYER_DELETE(new AdminEmployerDeleteCommand(new EmployerService())),
     ADMIN_EMPLOYER_EDIT(new AdminEmployerEditCommand(new EmployerService())),
     ADMIN_EMPLOYER_EDIT_SAVE(new AdminEmployerEditSaveCommand(new EmployerService())),
+    ADMIN_VACANCY_VIEW(new AdminVacancyViewCommand(new VacancyService(), new EmployerService())),
+    ADMIN_VACANCY_DELETE(new AdminVacancyDeleteCommand(new VacancyService(), new EmployerService())),
+    ADMIN_VACANCY_EDIT(new AdminVacancyEditCommand(new VacancyService())),
+    ADMIN_VACANCY_EDIT_SAVE(new AdminVacancyEditSaveCommand(new VacancyService(), new EmployerService())),
+    ADMIN_INTERVIEW_VIEW(new AdminInterviewViewCommand(new InterviewService(), new CandidateService(),
+            new VacancyService(), new EmployerService())),
+    ADMIN_INTERVIEW_DELETE(new AdminInterviewDeleteCommand(new InterviewService(), new CandidateService(),
+            new VacancyService(), new EmployerService())),
+    ADMIN_INTERVIEW_EDIT(new AdminInterviewEditCommand(new InterviewService())),
+    ADMIN_INTERVIEW_EDIT_SAVE(new AdminInterviewEditSaveCommand(new InterviewService(), new CandidateService(),
+            new VacancyService(), new EmployerService())),
     ;
     private Command command;
 
