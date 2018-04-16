@@ -34,6 +34,105 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>Candidate Home</servlet-name>
+        <jsp-file>/WEB-INF/jsp/candidateHome.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Candidate Home</servlet-name>
+        <url-pattern>/candidateHome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer Home</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerHome.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer Home</servlet-name>
+        <url-pattern>/employerHome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin</servlet-name>
+        <jsp-file>/WEB-INF/jsp/adminHome.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/adminHome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin Candidate</servlet-name>
+        <jsp-file>/WEB-INF/jsp/adminCandidate.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin Candidate</servlet-name>
+        <url-pattern>/adminCandidate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin Candidate Edit</servlet-name>
+        <jsp-file>/WEB-INF/jsp/adminCandidateEdit.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin Candidate Edit</servlet-name>
+        <url-pattern>/adminCandidateEdit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin Employer</servlet-name>
+        <jsp-file>/WEB-INF/jsp/adminEmployer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin Employer</servlet-name>
+        <url-pattern>/adminEmployer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin Employer Edit</servlet-name>
+        <jsp-file>/WEB-INF/jsp/adminEmployerEdit.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin Employer Edit</servlet-name>
+        <url-pattern>/adminEmployerEdit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin Vacancy</servlet-name>
+        <jsp-file>/WEB-INF/jsp/adminVacancy.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin Vacancy</servlet-name>
+        <url-pattern>/adminVacancy</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin Vacancy Edit</servlet-name>
+        <jsp-file>/WEB-INF/jsp/adminVacancyEdit.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin Vacancy Edit</servlet-name>
+        <url-pattern>/adminVacancyEdit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin Interview</servlet-name>
+        <jsp-file>/WEB-INF/jsp/adminInterview.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin Interview</servlet-name>
+        <url-pattern>/adminInterview</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin Interview Edit</servlet-name>
+        <jsp-file>/WEB-INF/jsp/adminInterviewEdit.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin Interview Edit</servlet-name>
+        <url-pattern>/adminInterviewEdit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Edit Account</servlet-name>
         <jsp-file>/WEB-INF/jsp/editAccount.jsp</jsp-file>
     </servlet>
