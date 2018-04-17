@@ -3,6 +3,7 @@ package by.bsuir.abmyotkashevtsov.controller.command;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.*;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.accountImpl.*;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.adminImpl.*;
+import by.bsuir.abmyotkashevtsov.controller.command.impl.candidateImpl.*;
 import by.bsuir.abmyotkashevtsov.service.*;
 
 /**
@@ -35,6 +36,17 @@ public enum CommandType {
     ADMIN_INTERVIEW_EDIT(new AdminInterviewEditCommand(new InterviewService())),
     ADMIN_INTERVIEW_EDIT_SAVE(new AdminInterviewEditSaveCommand(new InterviewService(), new CandidateService(),
             new VacancyService(), new EmployerService())),
+    CANDIDATE_ADD(new CandidateAddCommand(new AccountService(), new CandidateService())),
+    CANDIDATE_ADD_SAVE(new CandidateAddSaveCommand(new CandidateService())),
+    CANDIDATE_VIEW_EDIT(new CandidateViewEditCommand(new AccountService(), new CandidateService())),
+    CANDIDATE_VIEW_EDIT_SAVE(new CandidateViewEditSaveCommand(new CandidateService())),
+    CANDIDATE_VACANCY_VIEW(new CandidateVacancyViewCommand(new VacancyService(), new EmployerService())),
+    CANDIDATE_VACANCY_APPLY(new CandidateVacancyApplyCommand(new AccountService(), new CandidateService(),
+            new VacancyService(), new EmployerService(), new InterviewService())),
+    CANDIDATE_VACANCY_SEARCH(new CandidateVacancySearchCommand(new VacancyService(),new EmployerService())),
+    CANDIDATE_VACANCY_SEND_EMAIL(new CandidateVacancySendEmailCommand(new EmployerService())),
+    CANDIDATE_VACANCY_SEND_EMAIL_SUBMIT(new CandidateVacancySendEmailSubmitCommand(new AccountService(),
+            new CandidateService(), new EmployerService(), new VacancyService())),
     ;
     private Command command;
 
