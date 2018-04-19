@@ -43,12 +43,93 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>Candidate Add</servlet-name>
+        <jsp-file>/WEB-INF/jsp/candidateAdd.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Candidate Add</servlet-name>
+        <url-pattern>/candidateAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Candidate View Edit</servlet-name>
+        <jsp-file>/WEB-INF/jsp/candidateViewEdit.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Candidate View Edit</servlet-name>
+        <url-pattern>/candidateViewEdit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Candidate Vacancy</servlet-name>
+        <jsp-file>/WEB-INF/jsp/candidateVacancy.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Candidate Vacancy</servlet-name>
+        <url-pattern>/candidateVacancy</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Candidate Vacancy Send Email</servlet-name>
+        <jsp-file>/WEB-INF/jsp/candidateVacancySendEmail.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Candidate Vacancy Send Email</servlet-name>
+        <url-pattern>/candidateVacancySendEmail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Employer Home</servlet-name>
         <jsp-file>/WEB-INF/jsp/employerHome.jsp</jsp-file>
     </servlet>
     <servlet-mapping>
         <servlet-name>Employer Home</servlet-name>
         <url-pattern>/employerHome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer Add Information</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerAddInformation.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer Add Information</servlet-name>
+        <url-pattern>/employerAddInformation</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer Add Vacancy</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerAddVacancy.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer Add Vacancy</servlet-name>
+        <url-pattern>/employerAddVacancy</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer View Edit Information</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerViewEditInformation.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer View Edit Information</servlet-name>
+        <url-pattern>/employerViewEditInformation</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer View Vacancy</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerViewVacancy.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer View Vacancy</servlet-name>
+        <url-pattern>/employerViewVacancy</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer Edit Vacancy</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerEditVacancy.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer Edit Vacancy</servlet-name>
+        <url-pattern>/employerEditVacancy</url-pattern>
     </servlet-mapping>
 
     <servlet>
