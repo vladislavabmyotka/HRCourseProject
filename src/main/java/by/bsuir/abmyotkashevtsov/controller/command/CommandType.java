@@ -4,6 +4,7 @@ import by.bsuir.abmyotkashevtsov.controller.command.impl.*;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.accountImpl.*;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.adminImpl.*;
 import by.bsuir.abmyotkashevtsov.controller.command.impl.candidateImpl.*;
+import by.bsuir.abmyotkashevtsov.controller.command.impl.employerImpl.*;
 import by.bsuir.abmyotkashevtsov.service.*;
 
 /**
@@ -47,6 +48,19 @@ public enum CommandType {
     CANDIDATE_VACANCY_SEND_EMAIL(new CandidateVacancySendEmailCommand(new EmployerService())),
     CANDIDATE_VACANCY_SEND_EMAIL_SUBMIT(new CandidateVacancySendEmailSubmitCommand(new AccountService(),
             new CandidateService(), new EmployerService(), new VacancyService())),
+    EMPLOYER_ADD_INFORMATION(new EmployerAddInformationCommand(new AccountService(), new EmployerService())),
+    EMPLOYER_ADD_INFORMATION_SAVE(new EmployerAddInformationSaveCommand(new EmployerService())),
+    EMPLOYER_ADD_VACANCY(new EmployerAddVacancyCommand(new AccountService(), new EmployerService())),
+    EMPLOYER_ADD_VACANCY_SAVE(new EmployerAddVacancySaveCommand(new EmployerService(), new VacancyService())),
+    EMPLOYER_VIEW_EDIT_INFORMATION(new EmployerViewEditInformationCommand(new AccountService(), new EmployerService())),
+    EMPLOYER_VIEW_EDIT_INFORMATION_SAVE(new EmployerViewEditInformationSaveCommand(new EmployerService())),
+    EMPLOYER_VIEW_VACANCY(new EmployerViewVacancyCommand(new AccountService(), new EmployerService(),
+            new VacancyService())),
+    EMPLOYER_VACANCY_DELETE(new EmployerVacancyDeleteCommand(new AccountService(), new EmployerService(),
+            new VacancyService())),
+    EMPLOYER_VACANCY_EDIT(new EmployerVacancyEditCommand(new VacancyService())),
+    EMPLOYER_VACANCY_EDIT_SAVE(new EmployerVacancyEditSaveCommand(new AccountService(), new EmployerService(),
+            new VacancyService())),
     ;
     private Command command;
 
