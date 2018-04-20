@@ -133,6 +133,51 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>Employer Interview</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerInterview.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer Interview</servlet-name>
+        <url-pattern>/employerInterview</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer Interview Edit</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerInterviewEdit.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer Interview Edit</servlet-name>
+        <url-pattern>/employerInterviewEdit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer Interview View Candidate</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerInterviewViewCandidate.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer Interview View Candidate</servlet-name>
+        <url-pattern>/employerInterviewViewCandidate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer Interview View Candidate Send Email</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerInterviewViewCandidateSendEmail.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer Interview View Candidate Send Email</servlet-name>
+        <url-pattern>/employerInterviewViewCandidateSendEmail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employer Interview View Vacancy</servlet-name>
+        <jsp-file>/WEB-INF/jsp/employerInterviewViewVacancy.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employer Interview View Vacancy</servlet-name>
+        <url-pattern>/employerInterviewViewVacancy</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Admin</servlet-name>
         <jsp-file>/WEB-INF/jsp/adminHome.jsp</jsp-file>
     </servlet>
