@@ -23,7 +23,8 @@ public class MessageConstant {
             "message.employer.non.info.before.view.edit.info";
     public static final String EMPLOYER_NON_INFO_BEFORE_VIEW_EDIT_VACANCY =
             "message.employer.non.info.before.view.edit.vacancy";
-
+    public static final String EMPLOYER_NON_INFO_BEFORE_VIEW_INTERVIEW = "message.employer.non.info.before.interview";
+    public static final String EMPLOYER_NON_INTERVIEW = "message.employer.non.interview";
     public static final String INVALID_RECAPTCHA = "message.invalid.recaptcha";
     public static final String NON_REGISTERED_MESSAGE = "message.non.register";
     public static final String FORGOT_PASSWORD_THEME_MESSAGE = "message.forgot.password.theme";

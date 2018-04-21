@@ -19,6 +19,12 @@ public class PathConstant {
     public static final String PATH_PAGE_EMPLOYER_VIEW_EDIT_INFORMATION = "/employerViewEditInformation";
     public static final String PATH_PAGE_EMPLOYER_VIEW_VACANCY = "/employerViewVacancy";
     public static final String PATH_PAGE_EMPLOYER_EDIT_VACANCY = "/employerEditVacancy";
+    public static final String PATH_PAGE_EMPLOYER_INTERVIEW = "/employerInterview";
+    public static final String PATH_PAGE_EMPLOYER_INTERVIEW_EDIT = "/employerInterviewEdit";
+    public static final String PATH_PAGE_EMPLOYER_INTERVIEW_VIEW_CANDIDATE = "/employerInterviewViewCandidate";
+    public static final String PATH_PAGE_EMPLOYER_INTERVIEW_VIEW_CANDIDATE_SEND_EMAIL =
+            "/employerInterviewViewCandidateSendEmail";
+    public static final String PATH_PAGE_EMPLOYER_INTERVIEW_VIEW_VACANCY = "/employerInterviewViewVacancy";
     public static final String PATH_PAGE_ADMIN = "/adminHome";
     public static final String PATH_PAGE_ADMIN_CANDIDATE = "/adminCandidate";
     public static final String PATH_PAGE_ADMIN_CANDIDATE_EDIT = "/adminCandidateEdit";
