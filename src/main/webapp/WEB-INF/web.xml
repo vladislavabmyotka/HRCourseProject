@@ -277,6 +277,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>Contact</servlet-name>
+        <jsp-file>/WEB-INF/jsp/contact.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Contact</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Forgot Password</servlet-name>
         <jsp-file>/WEB-INF/jsp/forgotPassword.jsp</jsp-file>
     </servlet>
